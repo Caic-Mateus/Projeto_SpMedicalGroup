@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\caicm\\OneDrive\\Área de Trabalho\\SENAI-2Termo-Sprint2-Backend\\projeto_SpMedicalGroup\\senai.spmedicalgroup.webApi\\senai.spmedicalgroup.webApi\\senai.spmedicalgroup.webApi.csproj": {}
+    "C:\\Users\\caicm\\OneDrive\\Área de Trabalho\\Projeto_SpMedicalGroup\\Backend\\projeto_SpMedicalGroup\\senai.spmedicalgroup.webApi\\senai.spmedicalgroup.webApi\\senai.spmedicalgroup.webApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\caicm\\OneDrive\\Área de Trabalho\\SENAI-2Termo-Sprint2-Backend\\projeto_SpMedicalGroup\\senai.spmedicalgroup.webApi\\senai.spmedicalgroup.webApi\\senai.spmedicalgroup.webApi.csproj": {
+    "C:\\Users\\caicm\\OneDrive\\Área de Trabalho\\Projeto_SpMedicalGroup\\Backend\\projeto_SpMedicalGroup\\senai.spmedicalgroup.webApi\\senai.spmedicalgroup.webApi\\senai.spmedicalgroup.webApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\caicm\\OneDrive\\Área de Trabalho\\SENAI-2Termo-Sprint2-Backend\\projeto_SpMedicalGroup\\senai.spmedicalgroup.webApi\\senai.spmedicalgroup.webApi\\senai.spmedicalgroup.webApi.csproj",
+        "projectUniqueName": "C:\\Users\\caicm\\OneDrive\\Área de Trabalho\\Projeto_SpMedicalGroup\\Backend\\projeto_SpMedicalGroup\\senai.spmedicalgroup.webApi\\senai.spmedicalgroup.webApi\\senai.spmedicalgroup.webApi.csproj",
         "projectName": "senai.spmedicalgroup.webApi",
-        "projectPath": "C:\\Users\\caicm\\OneDrive\\Área de Trabalho\\SENAI-2Termo-Sprint2-Backend\\projeto_SpMedicalGroup\\senai.spmedicalgroup.webApi\\senai.spmedicalgroup.webApi\\senai.spmedicalgroup.webApi.csproj",
+        "projectPath": "C:\\Users\\caicm\\OneDrive\\Área de Trabalho\\Projeto_SpMedicalGroup\\Backend\\projeto_SpMedicalGroup\\senai.spmedicalgroup.webApi\\senai.spmedicalgroup.webApi\\senai.spmedicalgroup.webApi.csproj",
         "packagesPath": "C:\\Users\\caicm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\caicm\\OneDrive\\Área de Trabalho\\SENAI-2Termo-Sprint2-Backend\\projeto_SpMedicalGroup\\senai.spmedicalgroup.webApi\\senai.spmedicalgroup.webApi\\obj\\",
+        "outputPath": "C:\\Users\\caicm\\OneDrive\\Área de Trabalho\\Projeto_SpMedicalGroup\\Backend\\projeto_SpMedicalGroup\\senai.spmedicalgroup.webApi\\senai.spmedicalgroup.webApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\caicm\\AppData\\Roaming\\NuGet\\NuGet.Config",
