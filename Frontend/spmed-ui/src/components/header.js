@@ -9,7 +9,7 @@ export default function Header(){
         <header className="topo">
         <div className="container">
             <div className="menu_topo2">
-                <a href="#"><img className="imglogo" src={logo} /></a>
+                <a href="/"><img className="imglogo" src={logo} /></a>
             </div>
             <nav className="menu_topo">
                 <ul>

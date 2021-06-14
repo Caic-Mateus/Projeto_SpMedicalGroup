@@ -9,11 +9,15 @@
     height: 800px;
     background-image: url('../img/image\ 8.png');
     background-repeat: no-repeat;
-    
+    display: flex;
     background-size: 100% 100%;
 
     
 } 
+.corpo h1{
+    justify-content: center;
+    padding-bottom: 57px;
+}
 
 
 .topo{
@@ -98,7 +102,71 @@
         justify-content: space-between;
         align-items: center;
     }
-    
+    .posicao{
+        width: 70em;
+        
+        padding-left: 7%;
+    }
+    .grid{
+        width: 100%;
+       
+        
+        /* background-color:#3683FF; */
+    }
+    .lista{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        
+    }
+    .listagem{
+        width: 100%;
+        height: 100%;
+        /* background-color: aquamarine; */
+        
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+    .listagem p{
+        margin: 10px;
+        color: white;
+        
+    }
+    .descricao{
+        width: 700px;
+        /* background-color: darkblue; */
+        display: flex;
+    }
+    .desc{
+        height: 100px;
+    }
+    .desc p {
+        
+        color: white;
+    }
+    .alterar{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    .btnalt{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color:cornflowerblue;
+        border: cornsilk;
+        height: 30px;
+        align-items: center;
+        border-radius: 2px;
+
+    }
+    .btnalt:hover{
+        width: 100%;
+        height: 30px;
+        background-color: cyan;
+    }
     .links-footer{
         width: 33%;
         display: flex;
@@ -151,4 +219,35 @@
         align-items: center;
         justify-content: space-between;
         margin-top: 0.8em;
+    }
+    .box{
+        display: flex;
+        margin: 20px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 500px;
+        height: 180px;
+        background-color: blue;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: center;
+    }
+    .box2{
+        display: flex;
+        margin: 20px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 300px;
+        height: 180px;
+        background-color: blue;
+        border-radius: 5px;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .divisao{
+        display: flex;
+        justify-content: space-between;
     }
