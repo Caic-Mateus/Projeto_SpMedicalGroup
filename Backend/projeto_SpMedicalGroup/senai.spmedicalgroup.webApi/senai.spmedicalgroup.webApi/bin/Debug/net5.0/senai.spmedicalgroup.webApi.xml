@@ -14,6 +14,12 @@
             Instancia o objeto _habilidadeRepository para que haja a referência aos métodos do repositório
             </summary>
         </member>
+        <member name="M:senai.spmedicalgroup.webApi.Controllers.ConsultasController.ListaTodas">
+            <summary>
+            Lista todas as consultas
+            </summary>
+            <returns>uma lista de consultas</returns>
+        </member>
         <member name="M:senai.spmedicalgroup.webApi.Controllers.ConsultasController.Get">
             <summary>
             Lista todas as consultas de um determinado usuario

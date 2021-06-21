@@ -29,6 +29,23 @@ namespace senai.spmedicalgroup.webApi.Controllers
         }
 
         /// <summary>
+        /// Lista todas as consultas
+        /// </summary>
+        /// <returns>uma lista de consultas</returns>
+        [Authorize(Roles = "1")]
+        [HttpGet("listartodas")]
+        public IActionResult ListaTodas()
+        {
+            try
+            {
+                return Ok(_consultaRepository.Listar());
+            }
+            catch (Exception codErro)
+            {
+                return BadRequest(codErro);
+            }
+        }
+        /// <summary>
         /// Lista todas as consultas de um determinado usuario
         /// </summary>
         /// <returns>lista de consultas e um status code 200</returns>

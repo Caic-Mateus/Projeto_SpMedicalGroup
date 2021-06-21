@@ -38,5 +38,7 @@ namespace senai.spmedicalgroup.webApi.Interfaces
 
         void Deletar(int id);
 
+        List<Consultum> Listar();
+
     }
 }

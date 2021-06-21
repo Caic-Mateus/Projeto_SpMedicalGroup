@@ -141,5 +141,22 @@ namespace senai.spmedicalgroup.webApi.Repositories
 
             ctx.SaveChanges();
         }
+
+        public List<Consultum> Listar()
+        {
+            return ctx.Consulta
+                .Include(x => x.IdMedicoNavigation)
+                .Include(x => x.IdMedicoNavigation.IdEspecialidadeNavigation)
+                .Select(x => new Consultum
+                {
+                    IdConsulta = x.IdConsulta,
+                    IdMedicoNavigation = x.IdMedicoNavigation,
+                    IdPacienteNavigation = x.IdPacienteNavigation,
+                    IdSituacaoNavigation = x.IdSituacaoNavigation,
+                    Descricao = x.Descricao,
+                    DataConsulta = x.DataConsulta
+                })
+                .ToList();
+        }
     }
     }
