@@ -119,17 +119,23 @@ namespace senai.spmedicalgroup.webApi.Repositories
             ctx.SaveChanges();
         }
 
+
         // Método para inserir ou editar uma descrição nas consultas
-        public void InserirDescricao (int id, Consultum descricao, int idUsuario )
+        public void InserirDescricao(int id, Consultum descricao, int idUsuario)
         {
-            Consultum consultaBuscada = ctx.Consulta.FirstOrDefault(x => x.IdConsulta == id);
+           Consultum consultaBuscada = ctx.Consulta.FirstOrDefault(x => x.IdConsulta == id);
 
-            Medico medicoBuscado = ctx.Medicos.FirstOrDefault(x => x.IdUsuario == idUsuario);
+           // Medico medicoBuscado = ctx.Medicos.FirstOrDefault(x => x.IdUsuario == idUsuario);
 
-            if (descricao.Descricao != null && consultaBuscada.IdMedico == medicoBuscado.IdMedico)
+            //if (descricao.Descricao != null && consultaBuscada.IdMedico == medicoBuscado.IdMedico)
+            //{
+            //    consultaBuscada.Descricao = descricao.Descricao;
+           // }
+           if(descricao.Descricao != null)
             {
                 consultaBuscada.Descricao = descricao.Descricao;
             }
+
 
             ctx.Consulta.Update(consultaBuscada);
 

@@ -12,7 +12,7 @@ namespace senai.spmedicalgroup.webApi.Domains
         public int? IdMedico { get; set; }
         public int? IdPaciente { get; set; }
 
-        [Required(ErrorMessage ="Id Situação obrigatória")]
+        
         public int? IdSituacao { get; set; }
         public DateTime DataConsulta { get; set; }
 

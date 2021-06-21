@@ -6,7 +6,7 @@
 
 .corpo{
     width: 100%;
-    height: 800px;
+    
     background-image: url('../img/image\ 8.png');
     background-repeat: no-repeat;
     display: flex;
@@ -160,12 +160,23 @@
         height: 30px;
         align-items: center;
         border-radius: 2px;
+        color: white;
 
     }
     .btnalt:hover{
         width: 100%;
         height: 30px;
-        background-color: cyan;
+        color: black;
+        background-color: white;
+    }
+    .input{
+        width: 200px;
+    }
+    .conf{
+        width: 96px;
+        background-color:crimson;
+        color: white;
+        border: black;
     }
     .links-footer{
         width: 33%;
@@ -227,7 +238,7 @@
         flex-direction: column;
         width: 500px;
         height: 180px;
-        background-color: blue;
+        background-color: #3683FF;
         border-radius: 20px;
         justify-content: center;
         align-items: flex-start;
@@ -240,7 +251,7 @@
         flex-direction: column;
         width: 300px;
         height: 180px;
-        background-color: blue;
+        background-color: #3683FF;
         border-radius: 5px;
         justify-content: space-between;
         align-items: flex-start;
