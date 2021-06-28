@@ -32,7 +32,7 @@ namespace senai.spmedicalgroup.webApi.Controllers
         /// Lista todas as consultas
         /// </summary>
         /// <returns>uma lista de consultas</returns>
-        [Authorize(Roles = "1")]
+        //[Authorize(Roles = "1")]
         [HttpGet("listartodas")]
         public IActionResult ListaTodas()
         {
@@ -72,36 +72,7 @@ namespace senai.spmedicalgroup.webApi.Controllers
 
         }
 
-        [Authorize(Roles = "1")]
-        [HttpPost("agendar")]
-        public IActionResult Agendar(Consultum novaConsulta)
-        {
-            try
-            {
-                Consultum agendar = new Consultum()
-                {
-                    IdPaciente = novaConsulta.IdPaciente,
-                    IdMedico = novaConsulta.IdMedico,
-                    DataConsulta = novaConsulta.DataConsulta,
-                    IdSituacao = novaConsulta.IdSituacao
-
-
-
-                };
-                _consultaRepository.Cadastrar(agendar);
-
-                return StatusCode(201);
-            }
-            catch (Exception erro)
-            {
-                return BadRequest(new
-                {
-                    mensagem = "Não é possivel agendar uma consulta sem estar logado",
-                    erro
-                });
-
-            }
-        }
+        
 
         [HttpPost]
         public IActionResult Post(Consultum novaConsulta)
@@ -128,10 +99,10 @@ namespace senai.spmedicalgroup.webApi.Controllers
             {
 
                 return BadRequest(erro);
-                   }
+            }
         }
 
-        
+
         [Authorize(Roles = "2")]
         [HttpPatch("descricao/{id}")]
         public IActionResult PatchDesc(int id, ConsultumViewModel descricaoAtualizado)
@@ -161,5 +132,25 @@ namespace senai.spmedicalgroup.webApi.Controllers
             }
         }
 
+        [Authorize(Roles = "1")]
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            try
+            {
+                _consultaRepository.Deletar(id);
+
+                return StatusCode(204);
+            }
+            catch (Exception codErro)
+            {
+                return BadRequest(codErro);
+            }
+        }
+
     }
+    
+
+
+
 }

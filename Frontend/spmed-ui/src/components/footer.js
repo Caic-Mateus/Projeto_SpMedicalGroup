@@ -19,24 +19,24 @@ export default function Footer(){
                     <li><a href="#">Contato</a></li>
                   </ul>
                 </div>
-                <div className="links">
+                {/* <div className="links">
                   <h2>Páginas</h2>
                   <ul>
                     <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Campeonatos</a></li>
-                    <li><a href="#">Resultados</a></li>
+                    <li><a href="#">Médico</a></li>
+                    <li><a href="#">Paciente</a></li>
                     <li><a href="#">Notícias</a></li>
                     <li><a href="#">Login/Cadastro</a></li>
                   </ul>
-                </div>
+                </div> */}
               </div>
               <img className="logo-rodape" src={logo} alt="Logo E-Players" />
               <div className="sociais">
-                <h2>Faça parte do nosso clan, receba notícias e promoções!</h2>
-                <form action>
+                <h2>Venha fazer parte do nosso grupo!</h2>
+                {/* <form action>
                   <input type="email" placeholder="E-mail" />
                   <input type="submit" defaultValue="Cadastrar" />
-                </form>
+                </form> */}
                 <div className="siga-nos">
                   <h2>Siga-nos em:</h2>
                   <a href="#"><img src={insta} alt="Logo do Instagram" /></a>

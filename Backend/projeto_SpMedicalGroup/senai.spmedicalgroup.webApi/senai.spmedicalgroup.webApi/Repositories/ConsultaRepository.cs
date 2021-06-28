@@ -41,8 +41,10 @@ namespace senai.spmedicalgroup.webApi.Repositories
 
             public void Deletar(int id)
             {
-                throw new NotImplementedException();
-            }
+            ctx.Consulta.Remove(BuscarPorId(id));
+
+            ctx.SaveChanges();
+        }
 
             public List<Consultum> ListarMinhas(int id)
             {
