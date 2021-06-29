@@ -60,7 +60,7 @@ namespace senai.hroads.WebApi.Controllers
                         issuer: "SpMed.webApi",
                         audience: "SpMed.webApi",
                         claims: claims,
-                        expires: DateTime.Now.AddMinutes(5),
+                        expires: DateTime.Now.AddMinutes(20),
                         signingCredentials: creds
                     );
                 return Ok(new
